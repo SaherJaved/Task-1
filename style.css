@@ -1,0 +1,348 @@
+/* Resetting default styles for all elements  */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    /* Setting box-sizing to border-box ensures padding and border are included in the element's total width and height */
+    box-sizing: border-box;
+
+    /* Setting default font family */
+    font-family: "Poetsen One", sans-serif;
+}
+
+/* _____________________________NAVBAR___________________________________________________ */
+
+/* Styling for the navigation bar */
+
+.navbar {
+    height: 170px;
+    /* Setting background image for the navbar */
+    background-image: url(21.jpg);
+    /* Ensure the background image covers the entire navbar */
+    background-size: cover;
+    background-position: center;
+    /* Text color */
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+/* Styling for the name in the navbar */
+.navbar h1 {
+    font-size: 62px;
+    font-weight: 600;
+}
+
+/* Styling for the subtitle in the navbar */
+.navbar p {
+    margin: 10px 0 40px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+/* ______________________________MAIN__________________________________________________ */
+
+/* Styling for the main content */
+.main {
+    padding-top: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Styling for heading in the main content */
+.main h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+/* Styling for paragraphs in the main content */
+.main p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+/* ______________________________PANEL__________________________________________________ */
+
+/* Styling for panel */
+/* #panel {
+    padding: 2%;
+    margin: 11%;
+    height: 400px;
+    width: 920px;
+    background-image: url('2.jpeg');
+    background-repeat: space;
+    /* Centering the background */
+/* background-position: center ;
+
+} */
+
+/* ______________________________MID__________________________________________________ */
+.sequence-container {
+    width: 80%; /* Set the width of the container */
+    margin: auto; /* Center the container horizontally */
+    padding-top: 100px;
+}
+
+/* Styling for each sequence */
+.sequence {
+    width: calc(33.33% - 1em); /* Set the width of each sequence to one-third of the container width minus the margin */
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    
+}
+
+.mid {
+    margin: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styling for images inside sequences */
+.sequence img {
+    width: 100%; /* Ensure images fill the sequence */
+    border-radius: 8px; /* Add rounded corners to images */
+}
+
+/* Styling for hover effect on sequences */
+.sequence:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* ______________________________MID 2__________________________________________________ */
+/* Styling for the container of sequences */
+.sequence2-container {
+    width: 80%; /* Set the width of the container */
+    margin: auto; /* Center the container horizontally */
+    padding-top: 100px;
+    
+}
+
+
+/* Styling for each sequence */
+.sequence2 {
+    width: calc(33.33% - 1em); /* Set the width of each sequence to one-third of the container width minus the margin */
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+   
+}
+
+.mid2 {
+    margin: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styling for images inside sequences */
+.sequence2 img {
+    width: 100%; /* Ensure images fill the sequence */
+    border-radius: 8px; /* Add rounded corners to images */
+}
+
+/* Styling for hover effect on sequences */
+.sequence2:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* ________________________________________________________________________________ */
+
+/* Styling for horizontal rule */
+hr {
+    margin: 6%;
+}
+
+/* ______________________________COURSE SECTION__________________________________________________ */
+
+/* Styling for the course section */
+.course {
+    width: 80%;
+    /* Centering horizontally */
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+/* Styling for individual boxes */
+.box {
+    padding: 10px;
+    width: 1000px;
+    height: 500px;
+    border: 2px solid black;
+    margin: 0.5em;
+    background-image: url('1.jpg');
+    /* Setting background repeat */
+    background-repeat: no-repeat;
+    /* Making background cover the entire box */
+    background-size: cover;
+}
+
+/* Styling for rows */
+.row {
+    margin: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styling for course columns */
+.course-col {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+/* Styling for headings */
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col p{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+
+/* Styling for hover effect on course columns */
+.course-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for course images */
+.course-col img {
+    width: 100%;
+}
+
+/* ______________________________FOOTER SECTION__________________________________________________ */
+
+footer {
+    background-color: rgb(211, 127, 140);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 32px;
+    width: 100%;
+    padding-top: 15px;
+}
+
+/* _________________________________MEDIA QUERY_______________________________________________ */
+
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 1000px) {
+
+    /* Adjusting font sizes for smaller screens */
+    .navbar h1 {
+        background-size: auto;
+        font-size: 82px;
+    }
+
+    .navbar p {
+        font-size: 68px;
+    }
+
+    .main h1 {
+        font-size: 74px;
+    }
+
+    .main p {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    
+
+    /* Centering the panel and adjusting its dimensions for smaller screens */
+    /* #panel {
+        margin: 5%;
+        height: 300px;
+        width: 80%;
+    } */
+    
+
+    /* Adjusting margin for rows and course columns */
+    .row {
+        margin: 20px ;
+        flex-direction: column;
+    }
+
+    /* .row .col{
+        margin: 20px auto;
+    } */
+    
+    .mid {
+        width: 100%;
+        align-items: center;
+        margin: 20px ;
+        flex-direction: column;
+    }
+    .sequence {
+        width: 100%; /* Set the width of each sequence to one-third of the container width minus the margin */
+        background: #fff3f3;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        padding: 20px;
+        box-sizing: border-box;
+        transition: 0.5s;
+        
+    }
+
+    .sequence2 {
+        width: 100%; /* Set the width of each sequence to one-third of the container width minus the margin */
+        background: #fff3f3;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        padding: 20px;
+        box-sizing: border-box;
+        transition: 0.5s;
+        
+    }
+
+    .mid2 {
+        width:100%;
+        align-items: center;
+        margin: 20px ;
+        flex-direction: column;
+    }
+
+
+    .course-col {
+        flex-basis: 48%;
+        /* Taking almost half width on smaller screens */
+    }
+
+    .course-col img{
+        max-width:100% ;
+        /* Taking almost half width on smaller screens */
+    }
+}
+
+/* Media query for screens smaller than 480px */
+@media screen and (max-width: 480px) {
+
+    /* Adjusting font sizes for even smaller screens */
+    .navbar h1 {
+        width: 100%;
+        font-size: 789px;
+    }
+
+    .navbar p {
+        width: 100%;
+        font-size: 56px;
+    }
+}
+   
